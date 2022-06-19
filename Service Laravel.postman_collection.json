@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "bdb28fb3-5229-455f-a4bd-08bb7dba5b5a",
+		"name": "Service Laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13460760"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Request Berdasarkan Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/article/status2/?status=Draft",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article",
+						"status2",
+						""
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "Draft"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Semua Data artikel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/article",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
